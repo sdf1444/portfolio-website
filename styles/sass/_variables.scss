@@ -1,0 +1,38 @@
+// Fonts
+
+$body-font: "Sen", sans-serif;
+
+@mixin font-size($size){
+    font-size: ($size/10) * 1rem;
+}
+
+
+// Allows cross-browser rendering of underline
+@mixin underline($colour){
+    box-shadow: inset 0px -5px 0px 0px $colour;
+}
+
+
+
+// Colours
+$black: #030200;
+$white: #F8F8F8;
+$grey: #C4C4C4;
+
+$yellow:  #FFA818;
+$orange: #F06000;
+
+
+
+// Media Queries
+@mixin mobile-tablet {
+    @media (max-width: 780px){
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 500px){
+        @content;
+    }
+}

@@ -1,0 +1,129 @@
+// About Section
+
+.about-name,
+.about-me-container,
+.about-pic,
+.about-text,
+.skills-container,
+.skills-title {
+    display: flex;
+}
+
+.about-name,
+.about-text,
+.skills-title {
+    flex-direction: column;
+}
+
+.about-name,
+.about-pic,
+.skills-container,
+.skills-title {
+    align-items: center;
+}
+
+.skills-container,
+.skills-title,
+.about-me-container,
+.about-pic,
+.about-text,
+.skills-container,
+.skills-title {
+    justify-content: center;
+}
+
+.about-text p a:hover,
+.about-name h2 {
+    @include underline($orange);
+}
+
+
+.about-me {
+    min-height: 100vh;
+    padding-top: 20px;
+
+}
+
+
+.about-me-container {
+    align-items: stretch;
+    margin: 45px 0;
+    width: 100%;
+
+        .about-pic {
+            margin-right: 30px;
+            width: 35%;
+            align-self: start;
+
+        }
+}       
+
+
+.about-text {
+    width: 60%;
+    
+        p {
+
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                margin: 25px 0;
+            }
+
+            span {
+                font-weight: bold;
+            }
+
+        }
+
+    }
+    
+   
+
+
+
+// Skills Section
+
+.skills  {
+    height: 100%;
+
+    h2 span {
+        @include underline($yellow);
+
+    }
+
+}
+
+h3,
+.skills p {
+    font-weight: lighter;
+}
+
+
+.skills-container {
+    flex-wrap: wrap;
+    margin: 6% auto;
+
+}
+
+
+.skills-title {
+    flex-basis: 23%;
+    margin: 10px;
+    padding: 10px;
+
+        span {
+            font-size: 6.5rem;
+            
+            
+            &:hover {
+                transform: scale(1.1);
+                color: $yellow;
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+        }
+}
+

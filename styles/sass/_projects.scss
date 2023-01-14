@@ -1,0 +1,110 @@
+// Current Projects & Projects
+.projects,
+.current {
+    height: 100%;
+
+    h2 span {
+        @include underline($yellow);
+    }
+
+
+    h3,
+    h4,
+    .icon-text,
+    .project-links,
+    .project-icons-container {
+        margin: 10px 0;
+    }
+}
+
+.projects h2 span,
+.current-title {
+    margin: 5% auto;
+}
+
+.project {
+    display: flex;
+
+    .made-with span {
+        font-size: 4.5rem;
+        margin: 0 0.1em;
+
+    } 
+
+    a {
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline 4px $yellow; 
+        }
+    }
+    
+    p:first-of-type {
+        margin: 5px 0;
+    }
+
+}
+
+
+.mockup,
+.project-text {
+    width: calc(50% - 50px);
+    display: flex;
+    justify-content: center;
+}
+
+.mockup {
+    align-items: flex-start;
+}
+
+.project-text {
+    flex-direction: column;
+
+    .project-icons-container {
+        display: flex;
+    
+    
+    }
+    
+}
+
+.project-text:nth-child(2),
+.mockup:nth-child(2){
+    margin-left: 50px;
+}
+
+.project-text:nth-child(1){
+    text-align: right; 
+    
+    .project-icons-container {
+        justify-content: flex-end;
+    }
+}
+
+.project-text:nth-child(1),
+.mockup:nth-child(1){
+    margin-right: 50px;
+}
+
+.current {
+    
+    h2 span {
+        @include underline($orange);
+    }
+
+    .current-title {
+        text-align: center;
+    }
+
+    .project a {
+
+        &:hover {
+            text-decoration: underline 4px $orange; 
+        }
+    }
+
+}
+
+
+
+

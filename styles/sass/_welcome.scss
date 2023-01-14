@@ -1,0 +1,137 @@
+// Landing Page
+.welcome,
+.toggle-light {
+    display: flex;
+}
+
+.arrow,
+.switch-light,
+.light-check,
+.switch {
+    position: absolute;
+}
+
+.arrow,
+.toggle-light {
+    cursor: pointer;
+}
+
+
+
+.welcome {
+    min-height: 90vh;
+    flex-direction: column;
+    justify-content: center;
+
+        .name {
+            box-shadow: inset 0px -6px 0px 0px $yellow;
+        }
+        
+}
+
+
+.arrow {
+    @include font-size(55);
+    left: 50%;
+    right: 50%;
+    
+    &:active {
+        border-bottom: 4px solid $orange;
+    }
+
+    &:hover {
+        transform: scale(1.1);
+        color: $yellow;
+    }
+}
+
+// Light Mode
+// Special credits to Florin Pop's Codepen for the Light Theme toggle https://codepen.io/FlorinPop17/pen/XWWZYYG
+
+body.light {
+    background-color: $white;
+    color: $black;
+
+    span,
+    .skills-title p,
+    a,
+    h1 {
+        color: $black;
+    }
+
+    .hamburger {
+        a {
+            color: $white;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+        span {
+            background: $black;
+        }
+    }
+
+    .welcome {
+        background-color: $white;
+    }
+
+    .fa-moon {
+        color: $yellow ;
+    }
+}
+  
+.switch-light {
+    margin-top: 15px;
+    transform: rotate(90deg);
+    right: 0;
+    top: 80%;
+
+    .toggle-light {
+        background-color: $black;
+        border-radius: 50px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        height: 23px;
+        width: 60px;
+        transform: scale(1.5);
+        left: 85%;
+        border: 1px solid white;
+    }
+
+    .light-check {
+        opacity: 0;
+    }
+
+    .switch {
+        background-color: $white;
+        border-radius: 50%;
+        top: 3px;
+        left: -11px;
+        height: 15px;
+        width: 15px;
+        transform: translateX(16px);
+        transition: transform 0.2s linear;
+    }
+
+    input:checked + .toggle-light .switch {
+        transform: translateX(48px);
+    }
+
+    .fa-sun,
+    .fa-moon {
+        @include font-size(14);
+    }
+
+    .fa-sun {
+        color: $orange;
+    }
+
+    .fa-moon {
+        color: $yellow ;
+        transform: rotate(-90deg);
+    }
+}
+

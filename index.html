@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Sen&display=swap" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://kit.fontawesome.com/813177f008.js" crossorigin="anonymous"></script>
+  <!-- Libraries -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Stylesheet  -->
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Spencer Du Codes</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="wrapper">
+      <nav>
+        <ul class="top-nav">
+          <li tabindex="0">
+            <a href="#home">Home</a>
+          </li>
+          <li tabindex="0">
+            <a href="#about">About</a>
+          </li>
+          <li tabindex="0">
+            <a href="#current">Projects</a>
+          </li>
+        </ul>
+
+        <div tabindex="0" class="hamburger">
+          <label class="visually-hidden" for="ham-check">Open menu</label>
+          <input type="checkbox" name="hamburger" id="ham-check" class="ham-input">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+          <ul class="hamburger-menu" id="ham">
+            <li tabindex="0" class="ham-link">
+              <a href="#home">Home</a>
+            </li>
+            <li tabindex="0" class="ham-link">
+              <a href="#about">About</a>
+            </li>
+            <li tabindex="0" class="ham-link">
+              <a href="#current">Projects</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+    <!-- Navigation -->
+
+    <section class="welcome" id="home">
+      <div class="wrapper">
+        <div class="welcome-name">
+          <h1>
+            <span class="name" id="messenger">Spencer Du</span>
+            <br>
+            <span>Software Engineer</span>
+          </h1>
+        </div>
+      </div>
+    </section>
+    <span aria-hidden="true" class="material-icons arrow" tabindex="0">expand_more</span>
+
+    <div class="switch-light">
+      <input type="checkbox" class="light-check" id="light-dark" tabindex="0">
+
+      <label for="light-dark" class="toggle-light" title="Switch to Light Mode" tabindex="0">
+        <span aria-hidden="true" class="fas fa-moon"></span>
+        <span class="sr-only">Switch to dark mode</span>
+
+        <span aria-hidden="true" class="fas fa-sun"></span>
+        <span class="sr-only">Switch to light mode</span>
+
+        <div aria-hidden="true" class="switch"></div>
+      </label>
+    </div>
+    <!-- Welcome Page -->
+  </header>
+
+  <main>
+
+    <div class="spacer"></div>
+
+    <!-- About Me -->
+    <section class="about-me" id="about">
+      <div class="wrapper">
+
+        <div class="about-name">
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about-me-container" style="overflow-x: hidden">
+          <div class="about-pic" data-aos="fade-right" data-aos-duration="1000">
+            <img src="./assets/spencer-du.jpg" alt="young girl (Spencer Du) standing in front of yellow background">
+          </div>
+
+          <div class="about-text" data-aos="fade-left" data-aos-duration="1000">
+            <p>Hello World! I'm Spencer Du, a Software Engineer based out of Lancaster. From a biology degree to lines
+              of code on a web page, I love combining the worlds of logic and creative design to make eye-catching,
+              accessible, and user-friendly websites and applications.</p>
+
+            <p><span>Technology leads, society follows.</span> The move towards increasing inclusivity and diversity in
+              the industry through representation is of importance to me.</p>
+
+            <p>I'm excited to make the leap and continue refining my skills with the right company. Check me out at:</p>
+
+            <ul class="socials">
+              <li tabIndex="0">
+                <a href="https://github.com/sdf1444" target="_blank" rel="noopener noreferrer" aria-hidden="true"
+                  title="Go to Spencer's Github">
+                  <span class="fab fa-github"></span>
+                </a>
+              </li>
+
+              <li tabIndex="0">
+                <a href="https://www.linkedin.com/in/spencer-du-474aa198/" target="_blank" rel="noopener noreferrer"
+                  aria-hidden="true" title="Go to Spencer's LinkedIn">
+                  <span class="fab fa-linkedin"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="spacer"></div>
+
+    <!-- Skills -->
+
+    <section class="skills">
+      <div class="wrapper">
+
+        <h2><span>Skills</span></h2>
+
+        <ul class="skills-container">
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-html5-plain" title="HTML5"></span>
+            <p>HTML5</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-css3-plain" title="CSS"></span>
+            <p>CSS</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-javascript-plain" title="JavaScript & ES6"></span>
+            <p>JavaScript + ES6</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-typescript-plain" title="Typescript"></span>
+            <p>Typescript</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-sass-original" title="SASS"></span>
+            <p>Sass</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-jquery-plain" title="jQuery"></span>
+            <p>jQuery</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="material-icons">settings_ethernet</span>
+            <p>REST APIs</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-react-original" title="React"></span>
+            <p>React</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-redux-original" title="Redux"></span>
+            <p>Redux</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-mongodb-plain" title="Mongodb"></span>
+            <p>Mongodb</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-git-plain" title="Git"></span>
+            <p>Git</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicons devicons-terminal_badge" title="Terminal"></span>
+            <p>Terminal</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicons devicons-responsive" title="Responsive Design"></span>
+            <p>Responsive
+              <br>
+              Design
+            </p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="fas fa-universal-access" title="Accessibility"></span>
+            <p>Accessibility</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-azure-plain" title="Azure"></span>
+            <p>Azure</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-babel-plain" title="Babel"></span>
+            <p>Babel</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-webpack-plain" title="Webpack"></span>
+            <p>Webpack</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-bootstrap-plain" title="Bootstrap"></span>
+            <p>Bootstrap</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-chrome-plain" title="Chrome"></span>
+            <p>Chrome</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-gulp-plain" title="Gulp"></span>
+            <p>Gulp</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-jest-plain" title="Jest"></span>
+            <p>Jest</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-linux-plain" title="Linux"></span>
+            <p>Linux</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-mysql-plain" title="MySQL"></span>
+            <p>MySQL</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-nginx-original" title="Nginx"></span>
+            <p>Nginx</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-npm-original-wordmark" title="NPM"></span>
+            <p>NPM</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-vscode-plain" title="VSCode"></span>
+            <p>VSCode</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-woocommerce-plain" title="Woocommerce"></span>
+            <p>Woocommerce</p>
+          </li>
+
+          <li class="skills-title">
+            <span aria-hidden="true" class="devicon-wordpress-plain" title="Wordpress"></span>
+            <p>Wordpress</p>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+    <!-- Current Projects -->
+    <section class="current" id="current">
+      <div class="wrapper">
+        <div class="current-title">
+          <h2><span>Projects</span>
+          </h2>
+        </div>
+
+        <div class="project-container" style="overflow-x: hidden">
+          <!-- Bibtex web database -->
+          <div class="project one">
+
+            <div class="mockup" data-aos="zoom-in-right" data-aos-duration="1500">
+              <img src="./assets/bibtex-webdatabase.png" alt="Mockup of Bibtex webdatabase">
+            </div>
+
+            <div class="project-text" data-aos="zoom-in-left" data-aos-duration="1500">
+              <h3>Bibtex Web Database</h3>
+              <p>Bibtex web database is an application which allows researchers and academics to manage references for
+                scientific articles writen in LaTex</p>
+
+              <div class="made-with">
+                <h4>Made With</h4>
+                <ul class="project-icons-container">
+                  <li>
+                    <span aria-hidden="true" class="devicons devicons devicons-html5" title="HTML5"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-css3-plain" title="CSS"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-react-original" title="React"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="material-icons" title="REST APIs">settings_ethernet</span>
+                  </li>
+
+                </ul>
+
+              </div>
+
+              <div class="project-links">
+                <a href="https://helpful-palmier-901048.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  tabIndex="0" aria-hidden="true" title="Live link to Bibtex Web Database">Live Site</a>
+                <span>|</span>
+                <a href="https://github.com/sdf1444/Bibtex-web-database" target="_blank" rel="noopener noreferrer"
+                  tabIndex="0" aria-hidden="true" title="Bibtex on Github">Github</a>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Dev Connector -->
+          <div class="project two">
+
+            <div class="project-text" data-aos="zoom-in-right" data-aos-duration="1500">
+              <h3>Dev Connector</h3>
+              <p>Dev Connector is a social media website which allows software engineers and developers to connect with
+                each other</p>
+
+              <div class="made-with">
+                <h4>Made With</h4>
+                <ul class="project-icons-container">
+                  <li>
+                    <span aria-hidden="true" class="devicons devicons devicons-html5" title="HTML5"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-css3-plain" title="CSS"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-react-original" title="React"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="material-icons" title="REST APIs">settings_ethernet</span>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="project-links">
+                <a href="https://jolly-quokka-2f19ad.netlify.app/" target="_blank" rel="noopener noreferrer"
+                  tabIndex="0" aria-hidden="true" title="Dev Connector">Live Site</a>
+                <span>|</span>
+                <a href="https://github.com/sdf1444/DevConnector" target="_blank" rel="noopener noreferrer" tabIndex="0"
+                  aria-hidden="true" title="DevConnector on Github">Github</a>
+              </div>
+
+            </div>
+            <div class="mockup" data-aos="zoom-in-left" data-aos-duration="1500">
+              <img src="./assets/dev-connector.png" alt="Dev Connector">
+            </div>
+
+          </div>
+
+          <div class="project one">
+
+            <div class="mockup" data-aos="zoom-in-left" data-aos-duration="1500">
+              <img class="made-with-rattan" src="./assets/made-with-rattan.svg" alt="Made with Rattan">
+            </div>
+
+            <div class="project-text" data-aos="zoom-in-left" data-aos-duration="1500">
+              <h3>Made with Rattan</h3>
+              <p>A wordpress ecommerce website to allow a local business to enable them to sell their garden furniture
+                online</p>
+
+              <div class="made-with">
+                <h4>Made With</h4>
+                <ul class="project-icons-container">
+                  <li>
+                    <span aria-hidden="true" class="devicons devicons devicons-html5" title="HTML5"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-css3-plain" title="CSS"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-javascript-plain" title="JavaScript"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-wordpress-plain" title="Wordpress"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-woocommerce-plain" title="Woocommerce"></span>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="project-links">
+                <a href="https://www.madewithrattan.co.uk/" target="_blank" rel="noopener noreferrer" tabIndex="0"
+                  aria-hidden="true" title="MadewithRattan">Live Site</a>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="project four">
+
+            <div class="project-text" data-aos="zoom-in-right" data-aos-duration="1500">
+              <h3>TallTaleBooks</h3>
+              <p>A wordpress ecommerce website to allow a local business to enable them to sell books online</p>
+
+              <div class="made-with">
+                <h4>Made With</h4>
+                <ul class="project-icons-container">
+                  <li>
+                    <span aria-hidden="true" class="devicons devicons devicons-html5" title="HTML5"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-css3-plain" title="CSS"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-javascript-plain" title="JavaScript"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-wordpress-plain" title="Wordpress"></span>
+                  </li>
+                  <li>
+                    <span aria-hidden="true" class="devicon-woocommerce-plain" title="Woocommerce"></span>
+                  </li>
+                </ul>
+
+              </div>
+
+              <div class="project-links">
+                <a href="https://www.talltalesbooks.co.uk/" target="_blank" rel="noopener noreferrer" tabIndex="0"
+                  aria-hidden="true" title="TallTaleBooks">Live Site</a>
+              </div>
+
+            </div>
+            <div class="mockup" data-aos="zoom-in-left" data-aos-duration="1500">
+              <img class="talltalesbooks" src="./assets/talltalesbooks.svg" alt="Tall Tales Books">
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <a class="back-to-top" tabindex="0" id="top">Back to Top</a>
+      </div>
+    </section>
+
+    <div class="spacer"></div>
+
+  </main>
+
+  <footer>
+    <p>Designed by Spencer Du 2023</p>
+  </footer>
+
+  <!-- Added Scripts -->
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'
+    integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=' crossorigin='anonymous'></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/scramble.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
+<!-- Special credits to Erik Terwan's Codepen for the Hamburger Menu https://codepen.io/erikterwan/pen/EVzeRP?editors=1100 -->
+<!-- Special credits to Florin Pop's Codepen for the Light Theme toggle https://codepen.io/FlorinPop17/pen/XWWZYYG -->

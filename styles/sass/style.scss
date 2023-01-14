@@ -1,0 +1,363 @@
+@import 'setup';
+@import 'variables';
+@import 'devicons';
+
+@import 'navigation';
+@import 'welcome';
+@import 'about';
+@import 'projects';
+@import 'contact';
+
+
+
+
+// Default Styling & Stripping 
+html {
+    font-size: 62.5%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+button,
+form,
+a,
+input,
+textarea,
+label,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+    color: $white;
+}
+
+
+body {
+    @include font-size(20);
+    font-family: $body-font;
+    background-color: $black;
+    color: $white;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    overflow-x: hidden;
+    transition: background 0.2s linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+.back-to-top,
+.skills p,
+button,
+label,
+footer p {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    @include font-size(45);
+}
+
+h2 {
+    @include font-size(35);
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h2,
+.socials {
+    display: flex;
+}
+
+label {
+    display: none;
+}
+
+footer p {
+    @include font-size(15);
+}
+
+// Contact Icons
+.socials {
+    justify-content: center;
+
+    li {
+        flex-basis: 20%;
+
+        span {
+            font-size: 4rem;
+
+            &:hover {
+                transform: scale(1.1);
+                color: $orange;
+            }
+
+            &:focus {
+               outline: 1px dotted $yellow; 
+            }
+
+        }
+
+    }
+}
+
+.socials li,
+.back-to-top {
+    text-align: center;
+}
+
+// Divider
+.spacer {
+    height: 20vh;
+}
+
+
+// Media Queries
+
+@include mobile-tablet {
+// Standard 
+    .about-text p,
+    .project p,
+    .form-text p,
+    .form-text a {
+        @include font-size(16);
+    }
+
+    h1 {
+        @include font-size(40);
+    }
+
+    .about-me-container .about-text,
+    form,
+    .form-text {
+        text-align: center;
+    }
+
+    .about-name,
+    h2,
+    .about-me-container .about-me {
+        align-items: flex-start;
+    }
+
+    .about-me-container .about-pic,
+    .project-text:nth-child(1),
+    .mockup:nth-child(1),
+    .project-text:nth-child(2),
+    .mockup:nth-child(2),
+    form,
+    .form-container .form-text {
+        margin: 0 auto;    
+    }
+
+    .project-container .current-two,
+    .project-container .project-two,
+    .project-container .project-four,
+    .form-container {
+        flex-direction: column-reverse;
+    }
+
+    .about-me-container .about-text,
+    .mockup,
+    .project-text {
+        width: 100%;
+    }
+
+    .spacer {
+        height: 15vh;
+    }
+    
+
+// Navigation
+    .top-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+
+// About Me
+    .about-me-container {
+        flex-direction: column;
+        align-items: center;
+
+        .about-pic {
+            width: 50%;
+        }
+
+        .about-text {
+            margin-top: 50px;
+        }
+
+        .contact-icons i {
+            @include font-size(35);
+        }
+            
+    }
+    
+    .skills-title p {
+        @include font-size(12);
+    }
+
+
+// Projects
+    .project {
+        flex-direction: column;
+
+        .made-with span {
+            @include font-size(41);
+        }
+
+        h4,
+        .project-links a {
+            @include font-size(18);
+        }
+    }
+
+    
+// Contact
+    .form-container {
+        form,
+        .form-text {
+            width: 95%;
+        }
+
+        .form-text {
+            margin-bottom: 50px;
+
+            br {
+                margin: 0;
+            }
+
+            a {
+                @include font-size(15);
+            }
+        }
+
+    }
+
+    footer p {
+        @include font-size(15);
+    }
+
+}
+
+@include mobile {
+    h1 {
+        @include font-size(33);
+    }
+
+    .arrow {
+        left: 45%;
+    }
+
+    .about-me-container .about-pic {
+        width: 90%;
+    }
+
+    .about-name,
+    h2,
+    .about-me-container .about-me {
+        align-items: center;
+    }
+
+    .skills-title {
+        flex-basis: 40%;
+        margin: 0;
+
+        span {
+            @include font-size(60);
+        }
+    }
+    
+    .project-container {
+        margin-top: 50px;
+    
+        .project-text,
+        .project-text:nth-child(1)  {
+            text-align: center;
+            
+        }
+        
+        .project-text {
+            align-items: center;
+        }
+    }
+    
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .ham-input:checked ~ .hamburger-menu {
+        display: block;
+    }
+
+    .form-container .form-text a {
+        @include font-size(12);
+    }
+
+    // Light Mode
+    .switch-light {
+        margin-top: 20px;
+        right: 10px;
+        
+        .toggle-light {
+        left: 73%;
+        width: 50px;
+        }
+
+        .fa-sun,
+        .fa-moon {
+            @include font-size(11);
+        }
+
+        .switch {
+            top: 5px;
+            left: -12px;
+            height: 12px;
+            width: 12px;
+            transform: translateX(17px);
+        }
+       
+        input:checked + .toggle-light .switch {
+            transform: translateX(43px);
+        }
+    }
+    
+}
