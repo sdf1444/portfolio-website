@@ -1368,14 +1368,30 @@ h3,
   padding: 10px;
 }
 
-.skills-title span {
-  font-size: 6.5rem;
+.skills-title span,
+.skills-title svg.skill-icon {
+  font-size: 5.5rem; /* match visual scale with font icons */
+  width: 5.5rem;
+  height: 5.5rem;
+  display: block;
 }
 
-.skills-title span:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+.skills-title svg.skill-icon circle,
+.skills-title svg.skill-icon path {
+  stroke-width: 3; /* slightly thinner stroke for consistency */
+}
+
+.skills-title span:hover,
+.skills-title svg.skill-icon:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   color: #FFA818;
+}
+
+.project .made-with svg.skill-icon {
+  width: 3.8rem;
+  height: 3.8rem;
+  stroke-width: 2.2; /* slightly thinner for project icons */
 }
 
 .skills-title p {
@@ -1423,6 +1439,21 @@ h3,
   font-size: 4.5rem;
   margin: 0 0.1em;
 }
+
+/* Case study list styling */
+.project-case-study {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+  list-style: disc outside;
+  line-height: 1.6;
+}
+.project-case-study li {
+  margin: 0.6rem 0;
+}
+.project-case-study li strong {
+  color: #FFA818; /* accent to highlight section headings */
+}
+
 
 .project a {
   text-transform: uppercase;
@@ -1975,4 +2006,35 @@ footer p {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+/* WordPress practices list fixes */
+.wordpress-practices .practices-list {
+  margin-top: 0.75rem;
+  margin-left: 1.25rem;
+  padding-left: 1.25rem;
+  list-style: none; /* hide native markers to avoid being affected by other rules */
+  line-height: 1.8;
+}
+.wordpress-practices .practices-list li {
+  margin: 0.5rem 0;
+  position: relative;
+  padding-left: 1.9rem; /* space for custom marker */
+}
+/* Fallback: custom bullets using ::before to ensure visible markers across browsers */
+.wordpress-practices .practices-list li::before {
+  content: '•';
+  position: absolute;
+  left: 0.2rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(255,255,255,0.95);
+  font-size: 1.15rem;
+  line-height: 1;
+}
+/* Keep marker rule too where supported */
+.wordpress-practices .practices-list li::marker {
+  color: rgba(255,255,255,0.95);
+  font-size: 1.05em;
 }
