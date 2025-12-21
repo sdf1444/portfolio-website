@@ -2038,3 +2038,9 @@ footer p {
   color: rgba(255,255,255,0.95);
   font-size: 1.05em;
 }
+
+.project .mockup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
